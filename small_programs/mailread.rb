@@ -35,7 +35,7 @@ class Mail
         end
       end
 
-      # 
+      # lineが空行でなくnilならボディはないため処理を終了する
       return unless line
 
       # ボディの処理
