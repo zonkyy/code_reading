@@ -44,7 +44,7 @@ class Mail
         @body.push(line)
       end
     ensure
-      # エラーが発生したら開いたファイルを閉じる
+      # ファイルを開いたら必ず閉じる
       f.close if opened
     end
   end
