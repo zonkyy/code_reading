@@ -8,18 +8,23 @@
     
       <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
     
-    
+
     
       <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
     
       <script type="text/javascript" charset="utf-8" src="js/full_list.js"></script>
     
-    
+
+    <title>Method List</title>
     <base id="base_target" target="_parent" />
   </head>
   <body>
     <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) {
+      var hasFrames = false;
+      try {
+        hasFrames = window.top.frames.main ? true : false;
+      } catch (e) { }
+      if (hasFrames) {
         document.getElementById('base_target').target = 'main';
         document.body.className = 'frames';
       }
@@ -28,47 +33,57 @@
       <h1 id="full_list_header">Method List</h1>
       <div id="nav">
         
-          <a target="_self" href="class_list.html">Classes</a>
+          <span><a target="_self" href="class_list.html">
+            Classes
+          </a></span>
         
-          <a target="_self" href="method_list.html">Methods</a>
+          <span><a target="_self" href="method_list.html">
+            Methods
+          </a></span>
         
-          <a target="_self" href="file_list.html">Files</a>
+          <span><a target="_self" href="file_list.html">
+            Files
+          </a></span>
         
       </div>
       <div id="search">Search: <input type="text" /></div>
 
-      <ul id="full_list" class="methods">
+      <ul id="full_list" class="method">
         
 
   <li class="r1 ">
     <span class='object_link'><a href="Mail.html#%5B%5D-instance_method" title="Mail#[] (method)">#[]</a></span>
-    
-      <small>Mail</small>
-    
+    <small>Mail</small>
+  </li>
+  
+
+  <li class="r2 ">
+    <span class='object_link'><a href="Array.html#abbrev-instance_method" title="Array#abbrev (method)">#abbrev</a></span>
+    <small>Array</small>
+  </li>
+  
+
+  <li class="r1 ">
+    <span class='object_link'><a href="Abbrev.html#abbrev-class_method" title="Abbrev.abbrev (method)">abbrev</a></span>
+    <small>Abbrev</small>
   </li>
   
 
   <li class="r2 ">
     <span class='object_link'><a href="Mail.html#body-instance_method" title="Mail#body (method)">#body</a></span>
-    
-      <small>Mail</small>
-    
+    <small>Mail</small>
   </li>
   
 
   <li class="r1 ">
     <span class='object_link'><a href="Mail.html#header-instance_method" title="Mail#header (method)">#header</a></span>
-    
-      <small>Mail</small>
-    
+    <small>Mail</small>
   </li>
   
 
   <li class="r2 ">
     <span class='object_link'><a href="Mail.html#initialize-instance_method" title="Mail#initialize (method)">#initialize</a></span>
-    
-      <small>Mail</small>
-    
+    <small>Mail</small>
   </li>
   
 
